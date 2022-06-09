@@ -1,0 +1,12 @@
+{
+  "name": "CI-CD server",
+  "version": "1.0.0",
+  "description": "Implementing CI-CD server using Jenkins and Docker",
+  "main": "index.js",
+  "repository": "https://github.com/rimrim990/CI-CD-server.git",
+  "author": "rimrim990",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
