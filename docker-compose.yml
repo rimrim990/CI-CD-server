@@ -10,7 +10,6 @@ services:
       - mysql-data:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: admin
-      MYSQL_USER: root
       MYSQL_DATABASE: jenkins_app
 
   app:
