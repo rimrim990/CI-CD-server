@@ -7,6 +7,10 @@
 /dataSources/
 /dataSources.local.xm
 
+/node_modules/
+
 .idea
+
+.env
 
 yarn-error.log*

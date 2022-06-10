@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    ports:
+      - "3306:3306" # HOST:CONTAINER
+    volumes:
+      - mysql-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_USER: root
+      MYSQL_DATABASE: jenkins_app
+
+  app:
+    container_name: jenkins_app
+    build:
+      context: .
+      dockerfile: ./.dockerfile
+
+volumes:
+  mysql-data:
